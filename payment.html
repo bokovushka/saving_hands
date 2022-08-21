@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=412, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/libs.min.css?_v=20220821105041">
+	<link rel="stylesheet" href="css/main.min.css?_v=20220821105041">
+	<title>Payment</title>
+</head>
+
+<body>
+	<header class="header ">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-expand-xl navbar-light bg-white">
+					<a class="navbar-brand" href="#"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto text-center align-items-center">
+							<li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">For company</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+							<li class="nav-item d-xl-none"><button type="button" class="btn btn-primary">Get started</button></li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">EN</a>
+								<div class="dropdown-menu mx-auto">
+									<a class="dropdown-item" href="#">English</a>
+									<a class="dropdown-item" href="#">Deutsch</a>
+									<a class="dropdown-item" href="#">Spanish</a>
+								</div>
+							</li>
+							<li class="nav-item d-xl-none exit"><button type="button" class="btn btn-outline-primary">Exit</button></li>
+						</ul>
+					</div>
+					<div class="d-flex align-items-center">
+						<button class="btn btn-primary profile d-none">YN</button>
+						<div class="button d-flex align-items-center">
+							<button type="button" class="btn sign-in">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#user"></use>
+								</svg>
+								<p class="d-none d-md-block">Sign in</p>
+							</button>
+							<button type="button" class="btn btn-primary d-none d-md-inline-block">Get started</button>
+						</div>
+						<button class="navbar-toggler h-100" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<div class="menu-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</button>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+	<main>
+		<section class="confirmation courses pt-4 pt-sm-6 pt-lg-4 pb-12 pb-sm-16 pb-lg-14">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-9 col-lg mx-auto col-lg">
+						<div class="h1 pb-4 pb-sm-8 pb-lg-2 mb-0 text-md-center text-lg-left">Confirmation</div>
+					</div>
+				</div>
+				<div class="row flex-column-reverse flex-lg-row">
+					<div class="col col-md-9 col-lg-6 mx-auto ml-lg-0">
+						<ul class="nav nav-pills pb-6 pb-lg-8 pt-6 pt-lg-4" id="pills-tab" role="tablist">
+							<li class="nav-item mr-3">
+								<a class="nav-link active" id="pills-card-tab" data-toggle="pill" href="#pills-card" role="tab" aria-controls="pills-card" aria-selected="true">
+									<ul class="list-unstyled d-flex align-items-center">
+										<li><picture><source srcset="img/visa.webp" type="image/webp"><img class="visa" src="img/visa.png" alt=""></picture></li>
+										<li><picture><source srcset="img/mastercard.webp" type="image/webp"><img src="img/mastercard.png" alt=""></picture></li>
+										<li><picture><source srcset="img/amex.webp" type="image/webp"><img src="img/amex.png" alt=""></picture></li>
+										<li><picture><source srcset="img/disc.webp" type="image/webp"><img src="img/disc.png" alt=""></picture></li>
+										<li><picture><source srcset="img/jcb.webp" type="image/webp"><img src="img/jcb.png" alt=""></picture></li>
+									</ul>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-paypal-tab" data-toggle="pill" href="#pills-paypal" role="tab" aria-controls="pills-paypal" aria-selected="false">
+									<ul class="list-unstyled">
+										<li><picture><source srcset="img/paypal.webp" type="image/webp"><img src="img/paypal.png" alt=""></picture></li>
+									</ul>
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-card" role="tabpanel" aria-labelledby="pills-card-tab">
+								<form id="confirmation-form" class="form mw-100">
+									<div class="form-outline mb-6 mb-sm-4">
+										<input type="text" id="card-name" class="form-control" value="" required />
+										<label class="form-label" for="card-name">Enter the name on the credit card</label>
+									</div>
+									<div class="h6 font-weight-bold pb-2">Card Number</div>
+									<p class="descr pb-1 pb-sm-0">Enter the 16-digit card number on the card</p>
+									<div class="form-outline mb-8 mb-sm-6 position-relative credit-card">
+										<input type="text" id="cc" name="creditcard" class="form-control" value="" placeholder="xxxx xxxx xxxx xxxx" required />
+										<picture><source srcset="img/visa.webp" type="image/webp"><img class="cc-card-img visa" src="img/visa.png" alt=""></picture>
+										<div class="status-card d-flex align-items-center justify-content-center mx-auto">
+											<svg class="img-success d-none">
+												<use xlink:href="img/icons/icons.svg#check"></use>
+											</svg>
+											<svg class="img-close d-none">
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="d-flex justify-content-between mb-5 mb-sm-6 flex-column flex-sm-row">
+										<div class="mr-sm-3">
+											<div class="h6 font-weight-bold pb-2">CVV Number</div>
+											<p class="descr pb-1 pb-sm-0">Enter the 3 or 4 digit number on the card</p>
+										</div>
+										<div class="cvv wrap-input mx-auto mx-sm-0">
+											<input type="text" id="cvv" class="form-control text-center" minlength="4" maxlength="4">
+											<div class="svv-icon">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#square-cvv"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="d-flex justify-content-between mb-7 mb-sm-6 flex-column flex-sm-row">
+										<div class="mr-sm-3">
+											<div class="h6 font-weight-bold pb-2">Expiry Date</div>
+											<p class="descr pb-1 pb-sm-0">Enter the expiration date of the card</p>
+										</div>
+										<div class="wrap-input d-flex justify-content-between align-items-center mx-auto mx-sm-0">
+											<input type="text" id="month" class="form-control text-center" minlength="2" maxlength="2">
+											<p class="px-3 mb-0">/</p>
+											<input type="text" id="day" class="form-control text-center" minlength="2" maxlength="2">
+										</div>
+									</div>
+									<div class="d-flex justify-content-between align-items-sm-center flex-column flex-sm-row">
+										<div class="form-check d-flex align-items-center pl-0 mr-sm-3 mb-6 mb-sm-0">
+											<input class="form-check-input" type="checkbox" value="" id="check-form" />
+											<label class="form-check-label" for="check-form"></label>
+											<p class="d-flex mb-0 pl-4 accept">Save this card securely for future purposes.</a>
+											</p>
+										</div>
+										<button type="button" class="btn btn-primary">Pay now</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="pills-paypal" role="tabpanel" aria-labelledby="pills-paypal-tab">
+								<button type="button" class="btn btn-primary w-100">PayPal</button>
+							</div>
+						</div>
+					</div>
+					<div class="col d-lg-none">
+						<div class="line-bottom"></div>
+					</div>
+					<div class="col col-md-9 col-lg-5 col-xl-4 mx-auto ml-lg-auto mr-lg-0 pb-4 pb-lg-0">
+						<div class="card bg">
+							<picture><source srcset="img/course1.webp" type="image/webp"><img class="bg-img d-none d-lg-block" src="img/course1.jpg" alt=""></picture>
+							<div class="card-body">
+								<div class="mb-lg-6">
+									<div class="card-title h4 mb-0 mb-lg-4">Home Health Aide</div>
+									<p class="card-text d-none d-lg-block">Our Blended learning course allows students to complete the theory on their own pace and time. Once completed, the students will be able to register to complete the In-person skill session. The class access online will not expire.</p>
+								</div>
+								<div class="d-flex justify-content-center align-items-center">
+									<div class="course-price">$599</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+	<div class="container mt-10 mt-sm-8">
+		<div class="row">
+			<div class="col-xl-5 col-lg-4 order-md-last order-lg-first mb-10 mb-md-0 mt-0 mt-md-6 mt-lg-0">
+				<picture><source srcset="img/logo-f.webp" type="image/webp"><img class="mb-8 logo d-none d-lg-block" src="img/logo-f.png" alt=""></picture>
+				<p class="mb-6 font-weight-light d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+				<div class="social-button d-flex justify-content-center justify-content-md-start">
+					<a class="icon facebook mr-3" href="#" target="_blank">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#facebook"></use>
+						</svg>
+					</a>
+					<a class="icon telegram mr-3" href="#" target="_blank">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#telegram"></use>
+						</svg></a>
+					<a class="icon linkedin" href="#" target="_blank">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#linkedin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 footer-nav pb-7 pb-md-0">
+				<div class="row">
+					<div class="col-6 item">
+						<div class="pb-6 title">Academy</div>
+						<ul class="list-unstyled">
+							<a href="##">
+								<li>About us</li>
+							</a>
+							<a href="##">
+								<li>Blog</li>
+							</a>
+							<a href="##">
+								<li>Contact</li>
+							</a>
+						</ul>
+					</div>
+					<div class="col-6 item">
+						<div class="pb-6 title">Explore</div>
+						<ul class="list-unstyled">
+							<a href="##">
+								<li>First aid</li>
+							</a>
+							<a href="##">
+								<li>Home Care</li>
+							</a>
+							<a href="##">
+								<li>Home Health</li>
+							</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-md-6 footer-contact">
+				<div class="pb-6 title d-none d-md-block">Contact</div>
+				<ul class="list-unstyled pt-10 pt-md-0 mb-0">
+					<li class="d-flex pb-5 phone justify-content-center justify-content-md-start">
+						<svg class="mr-6 d-none d-md-block">
+							<use xlink:href="img/icons/icons.svg#phone"></use>
+						</svg>
+						<a href="tel:(866) 227-38-99">(866) 227-38-99</a>
+					</li>
+					<li class="d-flex pb-5 justify-content-center justify-content-md-start footer-email">
+						<svg class="mr-6 d-none d-md-block">
+							<use xlink:href="img/icons/icons.svg#mail"></use>
+						</svg>
+						<a target="_blank" href="mailto:info@domain.com">info@domain.com</a>
+					</li>
+					<li class="d-flex justify-content-center justify-content-md-start footer-address">
+						<svg class="mr-6 d-none d-md-block">
+							<use xlink:href="img/icons/icons.svg#address"></use>
+						</svg>
+						<p class="text-center text-md-left mb-0">329 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row align-items-center pt-10 pb-8 footer-bootom">
+			<div class=" col-6 col-md-4 col-xl-5">
+				<p class="copyright">© 2022 Academy Name</p>
+			</div>
+			<div class="col-12 col-md-4 d-flex justify-content-center justify-content-xl-start footer__pay-cards order-first order-md-0 mt-19 mt-md-0 mb-10 mb-md-0">
+				<picture><source srcset="img/visa.webp" type="image/webp"><img class="mr-5" src="img/visa.png" alt="visa"></picture>
+				<picture><source srcset="img/mastercard.webp" type="image/webp"><img class="mr-5" src="img/mastercard.png" alt="mastercard"></picture>
+				<picture><source srcset="img/paypal.webp" type="image/webp"><img src="img/paypal.png" alt="paypal"></picture>
+			</div>
+			<div class="col-6 col-md-4 col-xl-3 ml-auto">
+				<div class="d-flex justify-content-end justify-content-xl-start regulation">
+					<p><a href="##">Privacy Policy </a></p>
+					<p><a href="##">Terms of use</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+	<script src="js/libs.min.js?_v=20220821105041"></script>
+	<script src="js/main.min.js?_v=20220821105041"></script>
+</body>
+
+</html>
