@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Lesson"
+})
+
+<body class="lesson-p">
+	@@include('html/header.html',{})
+	<main>
+		<section class="main-title bg-light-blue-lighten">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="h1 text-center mb-0 pb-4 pt-6 pb-lg-6">ABP Best Home Care Agency - Boston, MA</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light-blue-lighten">
+			<div class="container">
+				<div class="row">
+					<div class="col module">
+						<div class="accordion" id="accordion-module" role="tablist" aria-multiselectable="true">
+							<div class="card">
+								<div class="card-header p-0" role="tab" id="heading-module">
+									<a class="card-header__body collapsed d-flex flex-column flex-md-row align-items-md-center justify-content-between pb-4 pb-md-5 pt-5 pl-4 pr-10 pr-md-12 pr-lg-14" data-toggle="collapse" data-parent="#accordion-module" href="#collapse-module" aria-expanded="false" aria-controls="collapse-module">
+										<div class="d-flex align-items-md-center mb-3 mb-md-0 svg-folder">
+											<svg class="option">
+												<use xlink:href="@img/icons/icons.svg#circle-option"></use>
+											</svg>
+											<div class="title mr-3"><span class="font-weight-light">Module 1:</span> Introduction to Infection Control</div>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="d-flex align-items-center card-header__left">
+												<div class="part-status mr-4 mr-lg-10">
+													<div class="in-progress text-white px-2 py-1">
+														<div class="in-progress__body">In progress</div>
+													</div>
+												</div>
+												<div class="time txt-small">43:00 min</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div id="collapse-module" class="collapse" role="tabpanel" aria-labelledby="heading-module" data-parent="#accordion-module">
+									<div class="card-body p-0">
+										<ul class="nav nav-pills flex-column" id="pills-tab" role="tablist">
+											<li class="nav-item lesson-success">
+												<a class="nav-link flex-column" id="pills-lesson-1-tab" data-toggle="pill" href="#pills-lesson-1" role="tab" aria-controls="pills-lesson-1" aria-selected="false">
+													<div class="d-flex justify-content-between flex-column flex-md-row">
+														<div class="lesson-title">
+															<div>Lesson 1: Understanding Standard and Transmission-Based Precautions</div>
+															<svg class="option">
+																<use xlink:href="@img/icons/icons.svg#circle-option"></use>
+															</svg>
+														</div>
+														<div class="lesson-time">14:00 min</div>
+													</div>
+												</a>
+											</li>
+											<li class="nav-item lesson-in-progress active">
+												<a class="nav-link flex-column active" id="pills-lesson-2-tab" data-toggle="pill" href="#pills-lesson-2" role="tab" aria-controls="pills-lesson-2" aria-selected="true">
+													<div class="d-flex justify-content-between flex-column flex-md-row">
+														<div class="lesson-title">
+															<div>Lesson 2: Transmission-Based Precautions</div>
+															<svg class="option">
+																<use xlink:href="@img/icons/icons.svg#circle-option"></use>
+															</svg>
+														</div>
+														<div class="lesson-time">20:00 min</div>
+													</div>
+												</a>
+											</li>
+											<li class="nav-item lesson-no-started">
+												<a class="nav-link flex-column" id="pills-lesson-3-tab" data-toggle="pill" href="#pills-lesson-3" role="tab" aria-controls="pills-lesson-3" aria-selected="false">
+													<div class="d-flex justify-content-between flex-column flex-md-row">
+														<div class="lesson-title">
+															<div>Lesson 3: Using Effective Infection Control Procedures</div>
+															<svg class="option">
+																<use xlink:href="@img/icons/icons.svg#circle-option"></use>
+															</svg>
+														</div>
+														<div class="lesson-time">14:00 min</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade" id="pills-lesson-1" role="tabpanel" aria-labelledby="pills-lesson-1-tab">
+								<div class="row">
+									<div class="col">
+										<div class="lesson-body bg-white pt-6 pb-8 pb-lg-6">
+											<div class="row">
+												<div class="col col-lg-8 mx-auto">
+													<div class="lesson-video pb-6 pb-lg-7">
+														<video id="player1" playsinline controls>
+															<source src="video/example.mp4" type="video/mp4" />
+														</video>
+													</div>
+													<div class="heading d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-6">
+														<div class="heading__wrap mr-3">
+															<div class="h6 pb-4 pb-md-2 font-weight-bold lesson-number">Lesson 1</div>
+															<div class="h2 mb-0 small pb-3 pb-md-0">Understanding Standard and Transmission-Based Precautions</div>
+														</div>
+														<button class="btn btn-outline-primary">Save & exit</button>
+													</div>
+													<div class="text-mask text-elegant-dark pb-4 pb-md-2 pb-lg-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </div>
+													<button class="btn d-block btn-outline-primary mx-auto">more</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col text-center">
+										<div class="lesson-next py-6 bg-white">
+											<button class="btn btn-primary">Next lesson</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade show active" id="pills-lesson-2" role="tabpanel" aria-labelledby="pills-lesson-2-tab">
+								<div class="row">
+									<div class="col">
+										<div class="lesson-body bg-white pt-6 pb-8 pb-lg-6">
+											<div class="row">
+												<div class="col col-lg-8 mx-auto">
+													<div class="lesson-video pb-6 pb-lg-7">
+														<video id="player2" playsinline controls>
+															<source src="video/example.mp4" type="video/mp4" />
+														</video>
+													</div>
+													<div class="heading d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-6">
+														<div class="heading__wrap mr-3">
+															<div class="h6 pb-4 pb-md-2 font-weight-bold lesson-number">Lesson 2</div>
+															<div class="h2 mb-0 small pb-3 pb-md-0">Transmission-Based Precautions</div>
+														</div>
+														<button class="btn btn-outline-primary">Save & exit</button>
+													</div>
+													<div class="text-mask text-elegant-dark pb-4 pb-md-2 pb-lg-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </div>
+													<button class="btn d-block btn-outline-primary mx-auto">more</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col text-center">
+										<div class="lesson-next py-6 bg-white">
+											<button class="btn btn-primary">Next lesson</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-lesson-3" role="tabpanel" aria-labelledby="pills-lesson-3-tab">
+								<div class="row">
+									<div class="col">
+										<div class="lesson-body bg-white pt-6 pb-8 pb-lg-6">
+											<div class="row">
+												<div class="col col-lg-8 mx-auto">
+													<div class="lesson-video pb-6 pb-lg-7">
+														<video id="player3" playsinline controls>
+															<source src="video/example.mp4" type="video/mp4" />
+														</video>
+													</div>
+													<div class="heading d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-6">
+														<div class="heading__wrap mr-3">
+															<div class="h6 pb-4 pb-md-2 font-weight-bold lesson-number">Lesson 3</div>
+															<div class="h2 mb-0 small pb-3 pb-md-0">Lesson 3: Using Effective Infection Control Procedures</div>
+														</div>
+														<button class="btn btn-outline-primary">Save & exit</button>
+													</div>
+													<div class="text-mask text-elegant-dark pb-4 pb-md-2 pb-lg-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </div>
+													<button class="btn d-block btn-outline-primary mx-auto">more</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col text-center">
+										<div class="lesson-next py-6 bg-white">
+											<button class="btn btn-primary">Next lesson</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="need-help bg-light-blue-lighten pt-6 pt-md-10 pb-10 pb-md-8 pt-lg-12 pb-lg-10">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="h2 mb-2 mb-lg-6">Need help or have a qustion?</div>
+						<div class="descr">we will answer your email</div>
+						<form id="help-form">
+							<div class="form-outline message mb-4 mt-4 mt-md-5">
+								<textarea class="form-control" placeholder="Write message..."></textarea>
+							</div>
+							<button class="btn btn-outline-primary ml-auto d-block">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Payment"
+})
+
+<body>
+	@@include('html/header.html',{})
+	<main>
+		<section class="confirmation courses pt-4 pt-sm-6 pt-lg-4 pb-12 pb-sm-16 pb-lg-14">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-9 col-lg mx-auto col-lg">
+						<div class="h1 pb-4 pb-sm-8 pb-lg-2 mb-0 text-md-center text-lg-left">Confirmation</div>
+					</div>
+				</div>
+				<div class="row flex-column-reverse flex-lg-row">
+					<div class="col col-md-9 col-lg-6 mx-auto ml-lg-0">
+						<ul class="nav nav-pills pb-6 pb-lg-8 pt-6 pt-lg-4" id="pills-tab" role="tablist">
+							<li class="nav-item mr-3">
+								<a class="nav-link active" id="pills-card-tab" data-toggle="pill" href="#pills-card" role="tab" aria-controls="pills-card" aria-selected="true">
+									<ul class="list-unstyled d-flex align-items-center">
+										<li><img class="visa" src="@img/visa.png" alt=""></li>
+										<li><img src="@img/mastercard.png" alt=""></li>
+										<li><img src="@img/amex.png" alt=""></li>
+										<li><img src="@img/disc.png" alt=""></li>
+										<li><img src="@img/jcb.png" alt=""></li>
+									</ul>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-paypal-tab" data-toggle="pill" href="#pills-paypal" role="tab" aria-controls="pills-paypal" aria-selected="false">
+									<ul class="list-unstyled">
+										<li><img src="@img/paypal.png" alt=""></li>
+									</ul>
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-card" role="tabpanel" aria-labelledby="pills-card-tab">
+								<form id="confirmation-form" class="form mw-100">
+									<div class="form-outline mb-6 mb-sm-4">
+										<input type="text" id="card-name" class="form-control" value="" required />
+										<label class="form-label" for="card-name">Enter the name on the credit card</label>
+									</div>
+									<div class="h6 font-weight-bold pb-2">Card Number</div>
+									<p class="descr pb-1 pb-sm-0">Enter the 16-digit card number on the card</p>
+									<div class="form-outline mb-8 mb-sm-6 position-relative credit-card">
+										<input type="text" id="cc" name="creditcard" class="form-control" value="" placeholder="xxxx xxxx xxxx xxxx" required />
+										<img class="cc-card-img visa" src="@img/visa.png" alt="">
+										<div class="status-card d-flex align-items-center justify-content-center mx-auto">
+											<svg class="img-success d-none">
+												<use xlink:href="@img/icons/icons.svg#check"></use>
+											</svg>
+											<svg class="img-close d-none">
+												<use xlink:href="@img/icons/icons.svg#close"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="d-flex justify-content-between mb-5 mb-sm-6 flex-column flex-sm-row">
+										<div class="mr-sm-3">
+											<div class="h6 font-weight-bold pb-2">CVV Number</div>
+											<p class="descr pb-1 pb-sm-0">Enter the 3 or 4 digit number on the card</p>
+										</div>
+										<div class="cvv wrap-input mx-auto mx-sm-0">
+											<input type="text" id="cvv" class="form-control text-center" minlength="4" maxlength="4">
+											<div class="svv-icon">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#square-cvv"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="d-flex justify-content-between mb-7 mb-sm-6 flex-column flex-sm-row">
+										<div class="mr-sm-3">
+											<div class="h6 font-weight-bold pb-2">Expiry Date</div>
+											<p class="descr pb-1 pb-sm-0">Enter the expiration date of the card</p>
+										</div>
+										<div class="wrap-input d-flex justify-content-between align-items-center mx-auto mx-sm-0">
+											<input type="text" id="month" class="form-control text-center" minlength="2" maxlength="2">
+											<p class="px-3 mb-0">/</p>
+											<input type="text" id="day" class="form-control text-center" minlength="2" maxlength="2">
+										</div>
+									</div>
+									<div class="d-flex justify-content-between align-items-sm-center flex-column flex-sm-row">
+										<div class="form-check d-flex align-items-center pl-0 mr-sm-3 mb-6 mb-sm-0">
+											<input class="form-check-input" type="checkbox" value="" id="check-form" />
+											<label class="form-check-label" for="check-form"></label>
+											<p class="d-flex mb-0 pl-4 accept">Save this card securely for future purposes.</a>
+											</p>
+										</div>
+										<button type="button" class="btn btn-primary">Pay now</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="pills-paypal" role="tabpanel" aria-labelledby="pills-paypal-tab">
+								<button type="button" class="btn btn-primary w-100">PayPal</button>
+							</div>
+						</div>
+					</div>
+					<div class="col d-lg-none">
+						<div class="line-bottom"></div>
+					</div>
+					<div class="col col-md-9 col-lg-5 col-xl-4 mx-auto ml-lg-auto mr-lg-0 pb-4 pb-lg-0">
+						<div class="card bg">
+							<img class="bg-img d-none d-lg-block" src="@img/course1.jpg" alt="">
+							<div class="card-body">
+								<div class="mb-lg-6">
+									<div class="card-title h4 mb-0 mb-lg-4">Home Health Aide</div>
+									<p class="card-text d-none d-lg-block">Our Blended learning course allows students to complete the theory on their own pace and time. Once completed, the students will be able to register to complete the In-person skill session. The class access online will not expire.</p>
+								</div>
+								<div class="d-flex justify-content-center align-items-center">
+									<div class="course-price">$599</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

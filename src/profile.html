@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Profile"
+})
+
+<body class="profile-p">
+	@@include('html/header.html',{})
+	<main>
+		<section class="profile-setting bg-light-blue-lighten">
+			<div class="container">
+				<div class="row">
+					<div class="col mt-8 mb-14">
+						<div class="d-flex justify-content-between align-items-center pb-6">
+							<ul class="nav nav-pills" id="pills-tab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="pills-account-tab" data-toggle="pill" href="#pills-account" role="tab" aria-controls="pills-account" aria-selected="true">My account</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="pills-payment-history-tab" data-toggle="pill" href="#pills-payment-history" role="tab" aria-controls="pills-payment-history" aria-selected="false">Payment history</a>
+								</li>
+							</ul>
+							<a href="##" class="btn btn-outline-primary font-weight-bold d-none d-md-block">Exit</a>
+						</div>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab">
+								<div class="profile-setting-item p-4 px-md-0 pt-md-6 pb-md-8 mb-4">
+									<form id="data-profile" class="form mw-100">
+										<div class="col col-md-3 col-lg-2 text-center profile-setting-icon">
+											<svg>
+												<use xlink:href="@img/icons/icons.svg#user-icon"></use>
+											</svg>
+										</div>
+										<div class="row">
+											<div class="col offset-md-3 offset-lg-2">
+												<div class="h3 small pb-6 pt-2 pt-md-0 pb-md-4">Profile</div>
+											</div>
+										</div>
+										<div class="row flex-column flex-lg-row pb-5">
+											<div class="col col-md-6 col-lg-3 offset-md-3 offset-lg-2 pb-5 pb-lg-0">
+												<div class="form-outline form-outline-top">
+													<input type="text" id="name" class="form-control" value="Alexander Atamanenko" required />
+													<label class="form-label" for="name">Full name</label>
+												</div>
+											</div>
+											<div class="ol col-md-6 col-lg-3 offset-md-3 offset-lg-0 pb-5 pb-lg-0">
+												<div class="form-outline form-outline-top">
+													<input type="email" id="email" class="form-control" value="Alex@gmail.com" required />
+													<label class="form-label" for="email">E-mail</label>
+												</div>
+											</div>
+											<div class="ol col-md-6 col-lg-3 offset-md-3 offset-lg-0">
+												<div class="form-outline form-outline-top">
+													<input type="tel" id="phone" class="form-control" value="+38 (099) 473-74-37" required />
+													<label class="form-label" for="phone">Phone</label>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col offset-md-3 offset-lg-2">
+												<button type="button" class="btn btn-outline-primary">Save</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="profile-setting-item p-4 px-md-0 pt-md-6 pb-md-8 mb-4">
+									<form id="data-password" class="form mw-100">
+										<div class="col col-md-3 col-lg-2 text-center profile-setting-icon">
+											<svg>
+												<use xlink:href="@img/icons/icons.svg#lock"></use>
+											</svg>
+										</div>
+										<div class="row">
+											<div class="col offset-md-3 offset-lg-2">
+												<div class="h3 small pb-6 pt-2 pt-md-0 pb-md-4">Password</div>
+											</div>
+										</div>
+										<div class="row flex-column flex-lg-row pb-5">
+											<div class="col col-md-6 col-lg-3 offset-md-3 offset-lg-2 pb-5 pb-lg-0">
+												<div class="form-outline">
+													<input type="password" id="password" class="form-control" value="" required />
+													<label class="form-label" for="password">Current password</label>
+												</div>
+											</div>
+											<div class="col col-md-6 col-lg-3 offset-md-3 offset-lg-0 pb-5 pb-lg-0">
+												<div class="form-outline">
+													<input type="password" id="new-password" class="form-control" value="" required />
+													<label class="form-label" for="new-password">New password</label>
+												</div>
+											</div>
+											<div class="col col-md-6 col-lg-3 offset-md-3 offset-lg-0">
+												<div class="form-outline">
+													<input type="password" id="new-password-repeat" class="form-control" value="" required />
+													<label class="form-label" for="new-password-repeat">Retype new password</label>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col offset-md-3 offset-lg-2">
+												<button type="button" class="btn btn-outline-primary">Save</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="profile-setting-item p-4 px-md-0 pt-md-6 pb-md-8 mb-4">
+									<form id="data-password" class="form mw-100">
+										<div class="col col-md-3 col-lg-2 text-center profile-setting-icon">
+											<svg>
+												<use xlink:href="@img/icons/icons.svg#bell"></use>
+											</svg>
+										</div>
+										<div class="row">
+											<div class="col offset-md-3 offset-lg-2">
+												<div class="h3 small pb-6 pt-2 pt-md-0 pb-md-4">Notification email</div>
+											</div>
+										</div>
+										<div class="row pb-6 pb-lg-12 pb-lg-8 pt-2 pt-lg-4">
+											<div class="col offset-md-3 offset-lg-2 d-flex">
+												<div class="form-check d-flex align-items-center pl-0 pr-10">
+													<input class="form-check-input" type="checkbox" value="" id="check-news" />
+													<label class="form-check-label" for="check-news"></label>
+													<p class="d-flex mb-0 pl-4 accept">News</p>
+												</div>
+												<div class="form-check d-flex align-items-center pl-0">
+													<input class="form-check-input" type="checkbox" value="" id="check-payment" />
+													<label class="form-check-label" for="check-payment"></label>
+													<p class="d-flex mb-0 pl-4 accept">Payments</p>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col offset-md-3 offset-lg-2">
+												<button type="button" class="btn btn-outline-primary">Save</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-payment-history" role="tabpanel" aria-labelledby="pills-payment-history-tab">
+								<div class="ph-setting-item p-3 p-md-4 px-xl-6 pb-xl-5 px-xl-6 mb-2">
+									<div class="row justify-content-between flex-column flex-md-row receipt">
+										<div class="col receipt__m-top">
+											<div class="row flex-nowrap">
+												<div class="col">
+													<div class="title">#</div>
+													<div>1</div>
+												</div>
+												<div class="col">
+													<div class="title">Date</div>
+													<div>14.03.2022</div>
+												</div>
+												<div class="col">
+													<div class="title">Time</div>
+													<div>14:07</div>
+												</div>
+											</div>
+										</div>
+										<div class="col col-md-3 col-lg-4 mb-6 mb-md-0">
+											<div class="title">Course name</div>
+											<div>ABP Best Home Care Agency - Boston, MA</div>
+										</div>
+										<div class="col col-xl-2 offset-xl-1 credit-card-data mb-6 mb-md-0">
+											<div class="title">Card</div>
+											<div>**** **** **** 4787</div>
+										</div>
+										<div class="col receipt__m-bottom mb-2 mb-md-0">
+											<div class="row">
+												<div class="col col-xl text-center">
+													<div class="title">Payment</div>
+													<div class="price">99.00 $</div>
+												</div>
+												<div class="col col-xl text-center status-payment">
+													<div class="title">Status</div>
+													<div class="status-payment__icon status-success d-flex align-items-center justify-content-center mx-auto">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#check"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ph-setting-item p-3 p-md-4 px-xl-6 pb-xl-5 px-xl-6 mb-2">
+									<div class="row justify-content-between flex-column flex-md-row receipt">
+										<div class="col receipt__m-top">
+											<div class="row flex-nowrap">
+												<div class="col">
+													<div class="title">#</div>
+													<div>2</div>
+												</div>
+												<div class="col">
+													<div class="title">Date</div>
+													<div>14.03.2022</div>
+												</div>
+												<div class="col">
+													<div class="title">Time</div>
+													<div>14:07</div>
+												</div>
+											</div>
+										</div>
+										<div class="col col-md-3 col-lg-4 mb-6 mb-md-0">
+											<div class="title">Course name</div>
+											<div>First aid</div>
+										</div>
+										<div class="col col-xl-2 offset-xl-1 credit-card-data mb-6 mb-md-0">
+											<div class="title">Card</div>
+											<div>**** **** **** 4787</div>
+										</div>
+										<div class="col receipt__m-bottom mb-2 mb-md-0">
+											<div class="row">
+												<div class="col col-xl text-center">
+													<div class="title">Payment</div>
+													<div class="price">99.00 $</div>
+												</div>
+												<div class="col col-xl text-center status-payment">
+													<div class="title">Status</div>
+													<div class="status-payment__icon status-close d-flex align-items-center justify-content-center mx-auto">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#close"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ph-setting-item p-3 p-md-4 px-xl-6 pb-xl-5 px-xl-6 mb-2">
+									<div class="row justify-content-between flex-column flex-md-row receipt">
+										<div class="col receipt__m-top">
+											<div class="row flex-nowrap">
+												<div class="col">
+													<div class="title">#</div>
+													<div>3</div>
+												</div>
+												<div class="col">
+													<div class="title">Date</div>
+													<div>14.03.2022</div>
+												</div>
+												<div class="col">
+													<div class="title">Time</div>
+													<div>14:07</div>
+												</div>
+											</div>
+										</div>
+										<div class="col col-md-3 col-lg-4 mb-6 mb-md-0">
+											<div class="title">Course name</div>
+											<div>ABP Best Home Care Agency - Boston, MA</div>
+										</div>
+										<div class="col col-xl-2 offset-xl-1 credit-card-data mb-6 mb-md-0">
+											<div class="title">Card</div>
+											<div>**** **** **** 4787</div>
+										</div>
+										<div class="col receipt__m-bottom mb-2 mb-md-0">
+											<div class="row">
+												<div class="col col-xl text-center">
+													<div class="title">Payment</div>
+													<div class="price">99.00 $</div>
+												</div>
+												<div class="col col-xl text-center status-payment">
+													<div class="title">Status</div>
+													<div class="status-payment__icon status-success d-flex align-items-center justify-content-center mx-auto">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#check"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ph-setting-item p-3 p-md-4 px-xl-6 pb-xl-5 px-xl-6">
+									<div class="row justify-content-between flex-column flex-md-row receipt">
+										<div class="col receipt__m-top">
+											<div class="row flex-nowrap">
+												<div class="col">
+													<div class="title">#</div>
+													<div>4</div>
+												</div>
+												<div class="col">
+													<div class="title">Date</div>
+													<div>14.03.2022</div>
+												</div>
+												<div class="col">
+													<div class="title">Time</div>
+													<div>14:07</div>
+												</div>
+											</div>
+										</div>
+										<div class="col col-md-3 col-lg-4 mb-6 mb-md-0">
+											<div class="title">Course name</div>
+											<div>First aid</div>
+										</div>
+										<div class="col col-xl-2 offset-xl-1 credit-card-data mb-6 mb-md-0">
+											<div class="title">Card</div>
+											<div>**** **** **** 4787</div>
+										</div>
+										<div class="col receipt__m-bottom mb-2 mb-md-0">
+											<div class="row">
+												<div class="col col-xl text-center">
+													<div class="title">Payment</div>
+													<div class="price">99.00 $</div>
+												</div>
+												<div class="col col-xl text-center status-payment">
+													<div class="title">Status</div>
+													<div class="status-payment__icon status-success d-flex align-items-center justify-content-center mx-auto">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#check"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

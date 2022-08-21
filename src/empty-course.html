@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Empty course"
+})
+
+<body>
+	@@include('html/header.html',{})
+	<main>
+		<section class="empty-course bg-light-blue-lighten mb-2 pt-4 pt-md-10 pb-10 pb-md-4">
+			<div class="container">
+				<div class="row">
+					<div class="col col-sm-10 col-md-8 col-xl-6 mx-auto text-center">
+						<div class="h1 mb-4">Welcome, YN!</div>
+						<div class="pb-4 subtitle">Choose course and start learning</div>
+						<a href="##"> <img src="@img/empty.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="courses-card bg-light-blue-lighten pt-10 pt-lg-9 pb-8 overflow-hidden popular-course">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="h2">Health and Social Care Courses</div>
+					</div>
+					<div class="w-100"></div>
+					<div class="col">
+						<div class="swiper-container popular-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="card bg h-100">
+										<img class="bg-img" src="@img/course1.jpg" alt="">
+										<div class="card-body">
+											<div class="mb-6">
+												<div class="card-title h4">Home Health Aide</div>
+												<p class="card-text">Our Blended learning course allows students to complete the theory on their own pace and time. Once completed, the students will be able to register to complete the In-person skill session. The class access online will not expire.</p>
+											</div>
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="course-price">$599</div>
+												<button class="btn btn-outline-primary">more</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card bg h-100">
+										<img class="bg-img" src="@img/course2.jpg" alt="">
+										<div class="card-body">
+											<div class="mb-6">
+												<div class="card-title h4">Certified Nursing Assistant</div>
+												<p class="card-text">Our Blended learning course allows students to complete the theory on their own pace and time. Once completed, the students will be able to register to complete the In-person skill session. The class access online will not expire.</p>
+											</div>
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="d-flex">
+													<div class="course-price text-warning pr-3">$99</div>
+													<del class="course-price-full">$158</del>
+												</div>
+												<button class="btn btn-outline-primary">more</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card bg h-100 course-notify">
+										<img class="bg-img" src="@img/course3.jpg" alt="">
+										<div class="coming-soon">coming soon</div>
+										<div class="card-body">
+											<div class="mb-6">
+												<div class="card-title h4">Adult and Pediatric CPR, AED, and First Aid</div>
+												<p class="card-text">Our Blended learning course allows students to complete the theory on their own pace and time. Once completed, the students will be able to register to complete the In-person skill session. The class access online will not expire.</p>
+											</div>
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="course-price course-notify-price">$99</div>
+												<button class="btn btn-outline-blue-darken">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#mail"></use>
+													</svg>notify Me</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination pt-5"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

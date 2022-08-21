@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Contact"
+})
+
+<body class="contact-p">
+	@@include('html/header.html',{})
+	<main>
+		<section class="breadcrumb-main">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb px-0 pt-4 pb-4 mb-0 justify-content-center align-items-center">
+								<li class="breadcrumb-item"><a href="##">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Contact</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main-title">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="h1 mb-0 mb-xl-4 text-center">Have a question? Contact us</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contact-info pb-8 pt-6">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="row flex-column flex-md-row">
+							<div class="col col-md-4 d-flex flex-md-column mb-10 md-md-0">
+								<div class="circle-wrap-primary mb-0 mb-md-5 mr-4 mr-md-0">
+									<div class="circle-wrap">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#address"></use>
+										</svg>
+									</div>
+								</div>
+								<div>
+									<div class="h3 small pb-4">Our Location</div>
+									<p class="contact-info__address mb-0 mb-md-3">329 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
+								</div>
+							</div>
+							<div class="col col-md-4 d-flex flex-md-column mb-10 md-md-0">
+								<div class="circle-wrap-primary mb-0 mb-md-5 mr-4 mr-md-0">
+									<div class="circle-wrap">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#phone"></use>
+										</svg>
+									</div>
+								</div>
+								<div>
+									<div class="h3 small pb-4">Our Number</div>
+									<a class="font-weight-bolder" href="tel:(866) 227-38-99">(866) 227-38-99</a>
+								</div>
+							</div>
+							<div class="col col-md-4 d-flex flex-md-column">
+								<div class="circle-wrap-primary mb-0 mb-md-5 mr-4 mr-md-0">
+									<div class="circle-wrap">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#mail"></use>
+										</svg>
+									</div>
+								</div>
+								<div>
+									<div class="h3 small pb-4">Our Email</div>
+									<a target="_blank" href="mailto:info@domain.com">info@domain.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="pt-md-6 py-lg-15 position-relative">
+			<div id="map" class="map"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-xl-5 ml-auto">
+						<form class="contact-form ml-lg-8 pt-10 pt-lg-5 pb-9 pb-md-7 px-0 px-lg-6">
+							<div class="h2 pb-lg-4">Write to us</div>
+							<div class="row pb-4 flex-column flex-md-row flex-lg-column">
+								<div class="col">
+									<div class="row flex-column">
+										<div class="col">
+											<div class="form-outline pb-4">
+												<input type="text" class="form-control" placeholder="Your name" />
+											</div>
+										</div>
+										<div class="col pb-4 pb-md-0 pb-lg-4">
+											<div class="form-outline">
+												<input type="email" class="form-control" placeholder="Email" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-outline h-100">
+										<textarea class="form-control h-100" rows="4" placeholder="Message"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col col-md-6 col-lg mx-auto mx-lg-0">
+									<button type="submit" class="btn btn-primary btn-block w-100">Send message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUf9Jypy7RWv2rQFR2CWaTvbCQ4zMXzmQ&callback=initMap&libraries=&v=weekly&_v=20220811142707"></script>
+	<script>
+		function initMap() {
+			var coordinates = { lat: 50.746601751122235, lng: 25.31728416682025 },
+				map = new google.maps.Map(document.getElementById("map"), {
+					center: coordinates,
+					zoom: 16,
+					scrollwheel: false,
+					styles: [
+						{
+							"featureType": "all",
+							"elementType": "labels.text.fill",
+							"stylers": [
+								{
+									"saturation": 36
+								},
+								{
+									"color": "#333333"
+								},
+								{
+									"lightness": 40
+								}
+							]
+						},
+						{
+							"featureType": "all",
+							"elementType": "labels.text.stroke",
+							"stylers": [
+								{
+									"visibility": "on"
+								},
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 16
+								}
+							]
+						},
+						{
+							"featureType": "all",
+							"elementType": "labels.icon",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						},
+						{
+							"featureType": "administrative",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#fefefe"
+								},
+								{
+									"lightness": 20
+								}
+							]
+						},
+						{
+							"featureType": "administrative",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#fefefe"
+								},
+								{
+									"lightness": 17
+								},
+								{
+									"weight": 1.2
+								}
+							]
+						},
+						{
+							"featureType": "administrative.locality",
+							"elementType": "labels.icon",
+							"stylers": [
+								{
+									"color": "#bd081c"
+								}
+							]
+						},
+						{
+							"featureType": "landscape",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#f5f5f5"
+								},
+								{
+									"lightness": 20
+								}
+							]
+						},
+						{
+							"featureType": "poi",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#f5f5f5"
+								},
+								{
+									"lightness": 21
+								}
+							]
+						},
+						{
+							"featureType": "poi.park",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#dedede"
+								},
+								{
+									"lightness": 21
+								}
+							]
+						},
+						{
+							"featureType": "road.highway",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 17
+								}
+							]
+						},
+						{
+							"featureType": "road.highway",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 29
+								},
+								{
+									"weight": 0.2
+								}
+							]
+						},
+						{
+							"featureType": "road.arterial",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 18
+								}
+							]
+						},
+						{
+							"featureType": "road.local",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 16
+								}
+							]
+						},
+						{
+							"featureType": "transit",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#f2f2f2"
+								},
+								{
+									"lightness": 19
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#e9e9e9"
+								},
+								{
+									"lightness": 17
+								}
+							]
+						}
+					]
+				});
+			image = 'img/marker.png',
+				marker = new google.maps.Marker({
+					position: coordinates,
+					map: map,
+					animation: google.maps.Animation.BOUNCE,
+					icon: image
+				});
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Payment"
+})
+
+<body>
+	@@include('html/header.html',{})
+	<main>
+		<section class="pt-4 pt-md-6 pt-lg-18 pb-20 pb-md-12 pb-lg-23 payment-result">
+			<div class="container">
+				<div class="row align-items-center flex-column-reverse flex-lg-row text-center text-lg-left">
+					<div class="col col-md-9 col-lg-5">
+						<div class="h1 d-none d-lg-block">Payment complete</div>
+						<p class="pb-3">Tnx ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+						<a href="##" class="btn btn-primary">Go to my courses</a>
+					</div>
+					<div class="col col-md-6 col-lg-7 mb-16 mb-md-8 mb-lg-0">
+						<img src="@img/pay-complete.png" alt="">
+					</div>
+					<div class="col col-md-9 h1 d-lg-none mb-0 mb-md-4">Payment complete</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
