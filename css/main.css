@@ -137,12 +137,21 @@ p {
   color: #3b424e;
 }
 
+p.small {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
 .btn {
   font-size: 18px;
   line-height: 20px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 .btn-sm {
@@ -2514,6 +2523,49 @@ p {
 
 .my-courses .nav-pills .nav-link {
   padding: 15px 40px;
+}
+
+#cookies.modal .modal-dialog {
+  bottom: 0;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+#cookies.modal .modal-dialog .modal-content {
+  -webkit-box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  border: none;
+}
+
+#cookies.modal .modal-dialog .modal-content .modal-body {
+  padding: 16px 0 17px 0;
+}
+
+#cookies.modal .modal-dialog .modal-content .modal-body .btn-primary {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#cookies.modal .modal-dialog .modal-content .modal-body img {
+  width: 77px;
+  height: auto;
+}
+
+#cookies.modal.fade:not(.show) {
+  opacity: 1;
+}
+
+#cookies.modal.fade:not(.show) .modal-dialog {
+  -webkit-transform: translate3d(0, 25%, 0);
+          transform: translate3d(0, 25%, 0);
+}
+
+.modal .modal-dialog.modal-bottom {
+  bottom: 0;
 }
 
 @media (min-width: 768px) {
