@@ -5,36 +5,6 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-//svg color
-document.querySelectorAll('img.svg').forEach(img => {
-	var imgId = img.id;
-	var imgClass = img.className;
-	var imgURL = img.src;
-	var imgFill = img.getAttribute('data-fill');
-
-	fetch(imgURL).then(r => r.text()).then(text => {
-		var parser = new DOMParser();
-		var xmlDoc = parser.parseFromString(text, "text/xml");
-		var svg = xmlDoc.getElementsByTagName('svg')[0];
-
-		if (typeof imgId !== 'undefined') {
-			svg.setAttribute('id', imgId);
-		}
-
-		if (typeof imgClass !== 'undefined') {
-			svg.setAttribute('class', imgClass);
-		}
-
-		if (typeof imgFill !== 'undefined') {
-			svg.setAttribute('fill', imgFill);
-		}
-
-		img.parentNode.replaceChild(svg, img);
-
-	}).catch(console.error);
-
-});
-
 //height 
 
 $(document).ready(function () {
@@ -52,7 +22,6 @@ $(document).ready(function () {
 		setEqualHeight($(".how-work .heading"));
 		setEqualHeight($(".courses-card-swiper .card-title"));
 		setEqualHeight($(".latest-news-swiper .card-title"));
-		// setEqualHeight($(".blog-swiper .swiper-slide .h1"));
 	});
 });
 
@@ -401,3 +370,10 @@ navlink.forEach(item => {
 	})
 })
 
+//cookies modal
+
+$(document).ready(function () {
+	setTimeout(function () {
+		$('#popup-cookies').click();
+	}, 1000);
+});

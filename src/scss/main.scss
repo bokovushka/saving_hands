@@ -85,12 +85,18 @@ picture {
 }
 p {
 	color: $elegant-dark;
+	&.small {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 0;
+	}
 }
 //buttons
 .btn {
 	font-size: 18px;
 	line-height: 20px;
 	width: max-content;
+	min-width: max-content;
 }
 .btn-sm {
 	font-size: 14px;
@@ -2041,6 +2047,42 @@ p {
 	.nav-pills .nav-link {
 		padding: 15px 40px;
 	}
+}
+//cookies
+#cookies {
+	&.modal {
+		.modal-dialog {
+			bottom: 0;
+			position: absolute;
+			margin: 0 auto;
+			width: 100%;
+			max-width: 100%;
+			.modal-content {
+				box-shadow: 0 -3px 6px rgb(0 0 0 / 16%);
+				border-radius: 0;
+				border: none;
+				.modal-body {
+					padding: 16px 0 17px 0;
+					.btn-primary {
+						height: max-content;
+					}
+					img {
+						width: 77px;
+						height: auto;
+					}
+				}
+			}
+		}
+		&.fade:not(.show) {
+			opacity: 1;
+			.modal-dialog {
+				transform: translate3d(0, 25%, 0);
+			}
+		}
+	}
+}
+.modal .modal-dialog.modal-bottom {
+	bottom: 0;
 }
 //..................................................................................................MOBILE
 //..................................................................................................(min-width: 1200px)
