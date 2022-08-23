@@ -88,11 +88,12 @@
 			</div>
 			<div class="col-6 col-md-4 col-xl-3 ml-auto">
 				<div class="d-flex justify-content-end justify-content-xl-start regulation">
-					<p><a href="##">Privacy Policy </a></p>
-					<p><a href="##">Terms of use</a></p>
+					<p><a data-toggle="modal" data-target="#privacy-policy">Privacy Policy </a></p>
+					<p><a data-toggle="modal" data-target="#terms-of-use">Terms of use</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
-
 </footer>
+@@include('popup-privacy-policy.html',{})
+@@include('popup-terms-of-use.html',{})

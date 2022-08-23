@@ -90,6 +90,21 @@ const interestedSwiper = new Swiper('.popular-swiper', {
 	},
 });
 
+const reviewsSwiper = new Swiper('.reviews-swiper', {
+	// Optional parameters
+	direction: 'horizontal',
+	grabCursor: true,
+	slidesPerView: 1,
+	navigation: {
+		nextEl: '.btn-reviews.button-next',
+		prevEl: '.btn-reviews.button-prev',
+	},
+	pagination: {
+		el: '.reviews .swiper-pagination',
+		type: 'fraction',
+	}
+});
+
 const LatestNewsSwiper = new Swiper('.latest-news-swiper', {
 	// Optional parameters
 	direction: 'horizontal',
@@ -149,3 +164,12 @@ import Plyr from 'plyr';
 const player1 = new Plyr('#player1');
 const player2 = new Plyr('#player2');
 const player3 = new Plyr('#player3');
+
+import flatpickr from "flatpickr";
+flatpickr(".datepicker", {
+	minDate: "today",
+	enableTime: true,
+	time_24hr: true,
+	disableMobile: "true",
+	wrap: true
+});

@@ -1,0 +1,51 @@
+<!-- The Modal no-email -->
+<div class="modal fade" id="notify-me">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="h3 small pb-4 mr-7">Notify me</div>
+				<form class="form mw-100">
+					<div class="form-outline mb-4">
+						<input type="email" id="email" class="form-control" value="" required="">
+						<label class="form-label" for="email">Email <span>- Required to fill</span></label>
+					</div>
+					<div class="form-check d-flex align-items-center mb-6 pl-0">
+						<input class="form-check-input" type="checkbox" value="" id="check-form">
+						<label class="form-check-label" for="check-form"></label>
+						<p class="mb-0 pl-4 accept">I accept
+							<a href="##">&nbsp;<span>Terms of Service and Privacy Notice</span></a>
+						</p>
+					</div>
+					<button type="button" class="btn btn-primary btn-block btn-next-modal mx-auto" data-toggle="modal" data-target="#we-write-you" data-dismiss="modal">Sign up</button>
+				</form>
+			</div>
+			<button type="button" class="close close-modal" data-dismiss="modal">
+				<svg>
+					<use xlink:href="@img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- The Modal resend -->
+<div class="modal fade" id="we-write-you">
+	<div class=" modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="we-write-you__svg-mail text-center mb-9">
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#we-write"></use>
+					</svg>
+				</div>
+				<div class="h3 small pb-4 text-center">Thank you!</div>
+				<p class="pb-6 mb-0">We write you, when course "Second Aid will availible"</p>
+				<button type="button" class="btn btn-sm btn-primary d-block mx-auto" data-dismiss="modal" data-target="#resend">Ок</button>
+			</div>
+			<button type="button" class="close close-modal" data-dismiss="modal">
+				<svg>
+					<use xlink:href="@img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>

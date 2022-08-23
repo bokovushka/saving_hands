@@ -1,0 +1,40 @@
+<!-- The Modal no-email -->
+<div class="modal fade" id="no-email">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="h3 small pb-7 mr-7">Did not get the email?</div>
+				<ol>
+					<li>Check your SPAM folder</li>
+					<li>Is the email correct?</li>
+				</ol>
+				<div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+					<a href="##" class="btn btn-outline-primary mb-3 mb-sm-0">Change Email</a>
+					<button type="button" class="btn btn-primary btn-next-modal" data-toggle="modal" data-target="#resend" data-dismiss="modal">Resend</button>
+				</div>
+			</div>
+			<button type="button" class="close close-modal" data-dismiss="modal">
+				<svg>
+					<use xlink:href="@img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- The Modal resend -->
+<div class="modal fade" id="resend">
+	<div class=" modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="h3 small pb-7 mr-7">Email sent</div>
+				<p class="pb-15 mb-0">Check your inbox and be sure to check your SPAM folder</p>
+				<button type="button" class="btn btn-primary d-block mx-auto" data-dismiss="modal" data-target="#resend">Close</button>
+			</div>
+			<button type="button" class="close close-modal" data-dismiss="modal">
+				<svg>
+					<use xlink:href="@img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>

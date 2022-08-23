@@ -360,6 +360,7 @@ cardHeader.forEach(item => {
 		}
 	})
 })
+
 //add class active to .nav-item
 const navlink = document.querySelectorAll('.accordion .nav-pills .nav-link')
 navlink.forEach(item => {
@@ -371,9 +372,47 @@ navlink.forEach(item => {
 })
 
 //cookies modal
-
 $(document).ready(function () {
 	setTimeout(function () {
 		$('#popup-cookies').click();
 	}, 1000);
 });
+
+//second modal: example no-email ---> resend
+$(".modal .btn-next-modal").click(function () {
+	setTimeout(function () {
+		$('body').addClass("modal-open");
+	}, 350);
+
+});
+
+//timer save lesson
+$(".btn-save-lesson").click(function () {
+	var timeLeft = 10;
+	function countdown() {
+		timeLeft--;
+		document.getElementById("seconds").innerHTML = String(timeLeft);
+		if (timeLeft > 0) {
+			setTimeout(countdown, 1000);
+		}
+		else {
+			window.location.href = '../course.html';
+		}
+	};
+	setTimeout(countdown, 0);
+});
+
+//redirect page click
+$("#save-lesson .btn-primary").click(function () {
+	window.location.href = '../course.html';
+});
+
+//test-not-passed
+if ($(".complete-test__result").hasClass("test-not-passed")) {
+	document.querySelector(".test-not-passed .score .h6").innerHTML = "Test not passed";
+	document.querySelector(".test-not-passed .btn-primary").innerHTML = "Retake test";
+}
+
+//datepicker
+$('.flatpickr-time').wrap('<div class="time-wrapper"/>');
+$(".time-wrapper").append($('<p class="mb-0 mr-5">').text("Time"))

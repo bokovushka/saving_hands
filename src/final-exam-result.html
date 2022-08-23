@@ -107,13 +107,15 @@
 														<div class="mr-3">Сorrect answer: <span class="font-weight-bolder">Severe dementia</span></div>
 													</div>
 												</div>
-												<button type="button" class="btn btn-primary d-block mx-auto mb-3 mb-md-10 mt-n1 mt-md-n3 mx-auto d-none">Complete test</button>
+												<div class="text-center">
+													<button type="button" class="btn btn-primary mb-3 mb-md-10 mt-n1 mt-md-n3 d-none">Complete test</button>
+												</div>
 												<div class="complete-test__result">
 													<div class="d-flex justify-content-center pb-10">
 														<div class="score">
 															<div>
 																<div class="h6 font-weight-bold text-elegant-dark">Exam complete</div>
-																<div class="h2 small mb-0 score-points font-weight-light text-success">Score: 100</div>
+																<div class="h2 small mb-0 score-points font-weight-light">Score: 100</div>
 															</div>
 														</div>
 													</div>
@@ -130,7 +132,12 @@
 														<div class="h2 pb-2">Hands on training</div>
 														<form id="form-hands-on-training" class="d-flex justify-content-center">
 															<div class="datepicker mr-6">
-																<input type="date" class="form-control">
+																<input id="datepicker" class="flatpickr-input form-control" type="text" placeholder="Select Date.." data-input>
+																<a class="input-button" title="toggle" data-toggle>
+																	<svg>
+																		<use xlink:href="@img/icons/icons.svg#calendar"></use>
+																	</svg>
+																</a>
 															</div>
 															<button type="button" class="btn btn-primary">Enroll</button>
 														</form>
