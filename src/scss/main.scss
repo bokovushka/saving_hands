@@ -186,11 +186,14 @@ p {
 	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
 	background: $white;
 	position: relative;
+	overflow: visible;
 }
 .navbar {
 	width: 100%;
 	padding: 10px 0;
 	.button {
+		display: flex;
+		align-items: center;
 		.btn-primary {
 			font-weight: 500;
 			padding: 20px 40px;
@@ -233,6 +236,7 @@ p {
 }
 .navbar-nav {
 	margin-right: 52px;
+	margin-left: auto;
 	.nav-item {
 		position: relative;
 		&:not(.dropdown) {
@@ -274,7 +278,6 @@ p {
 		transform: rotate(180deg);
 	}
 }
-
 .dropdown-menu {
 	padding: 27px 36px;
 	box-shadow: 0px 3px 6px #0000001a;
@@ -354,7 +357,22 @@ p {
 		}
 	}
 }
-
+.btn-my-courses,
+.user-menu {
+	display: none;
+}
+.header-user {
+	.button {
+		display: none;
+	}
+	.btn-my-courses,
+	.user-menu {
+		display: block;
+	}
+	.navbar-nav {
+		margin: 0 auto;
+	}
+}
 //footer
 .footer {
 	border-top: 1px solid $blue-grey-lighten;
@@ -2022,8 +2040,8 @@ p {
 		}
 	}
 }
-//empty-course
-.empty-course {
+//emty-course
+.emty-course {
 	.subtitle {
 		color: #858fa1;
 	}
@@ -2379,6 +2397,12 @@ p {
 		}
 	}
 }
+.lock {
+	overflow: hidden;
+	.header {
+		overflow: auto;
+	}
+}
 //..................................................................................................MOBILE
 //..................................................................................................(min-width: 1200px)
 @media (min-width: 1200px) {
@@ -2420,6 +2444,20 @@ p {
 		.exit {
 			padding-top: 199px;
 			padding-bottom: 60px;
+		}
+		.btn-my-courses {
+			display: none;
+		}
+	}
+	.header-user {
+		.navbar-nav {
+			margin-top: 10px;
+			.btn-started {
+				display: none;
+			}
+			.btn-my-courses {
+				display: block;
+			}
 		}
 	}
 	.section-top {
@@ -3040,6 +3078,13 @@ p {
 		&.show .dropdown-toggle::after,
 		&:hover .dropdown-toggle::after {
 			transform: translateX(-50%) translateX(-8.5px) rotate(180deg);
+		}
+	}
+	.header-user {
+		.menu-right {
+			.btn-my-courses {
+				display: none;
+			}
 		}
 	}
 }

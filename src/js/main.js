@@ -416,3 +416,18 @@ if ($(".complete-test__result").hasClass("test-not-passed")) {
 //datepicker
 $('.flatpickr-time').wrap('<div class="time-wrapper"/>');
 $(".time-wrapper").append($('<p class="mb-0 mr-5">').text("Time"))
+
+
+//mobile menu
+$(document).ready(function () {
+	let body_lock = document.querySelector('body');
+	let menuBtn = document.querySelector('.navbar-toggler');
+	let exitBtn = document.querySelector('.exit')
+
+	menuBtn.addEventListener('click', function () {
+		body_lock.classList.toggle('lock');
+	})
+	exitBtn.addEventListener('click', function () {
+		body_lock.classList.remove('lock');
+	})
+});
