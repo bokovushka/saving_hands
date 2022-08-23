@@ -20,6 +20,7 @@
 		"bootstrap": "^4.6.2",
 		"browser-sync": "latest",
 		"del": "latest",
+		"flatpickr": "latest",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
