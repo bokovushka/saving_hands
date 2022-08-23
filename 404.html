@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=412, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="css/libs.min.css?_v=20220822134926">
-	<link rel="stylesheet" href="css/main.min.css?_v=20220822134926">
+	<link rel="stylesheet" href="css/libs.min.css?_v=20220823062900">
+	<link rel="stylesheet" href="css/main.min.css?_v=20220823062900">
 	<title>404</title>
 </head>
 
@@ -25,7 +25,7 @@
 							<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 							<li class="nav-item d-xl-none"><button type="button" class="btn btn-primary">Get started</button></li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">EN</a>
+								<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">EN</a>
 								<div class="dropdown-menu mx-auto">
 									<a class="dropdown-item" href="#">English</a>
 									<a class="dropdown-item" href="#">Deutsch</a>
@@ -36,7 +36,13 @@
 						</ul>
 					</div>
 					<div class="d-flex align-items-center">
-						<button class="btn btn-primary profile d-none">YN</button>
+						<div class="dropdown user-menu">
+							<button class="btn btn-primary profile dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">YN</button>
+							<div class="dropdown-menu dropdown-menu-right mx-auto">
+								<a class="dropdown-item" href="#">My account</a>
+								<a class="dropdown-item" href="#">Payment history</a>
+							</div>
+						</div>
 						<div class="button d-flex align-items-center">
 							<button type="button" class="btn sign-in">
 								<svg>
@@ -197,16 +203,57 @@
 			</div>
 			<div class="col-6 col-md-4 col-xl-3 ml-auto">
 				<div class="d-flex justify-content-end justify-content-xl-start regulation">
-					<p><a href="##">Privacy Policy </a></p>
-					<p><a href="##">Terms of use</a></p>
+					<p><a data-toggle="modal" data-target="#privacy-policy">Privacy Policy </a></p>
+					<p><a data-toggle="modal" data-target="#terms-of-use">Terms of use</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
-
 </footer>
-	<script src="js/libs.min.js?_v=20220822134926"></script>
-	<script src="js/main.min.js?_v=20220822134926"></script>
+<!-- The Modal no-email -->
+<div class="modal fade" id="privacy-policy">
+	<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header px-5 pt-5 pb-0">
+				<div class="h3 small pb-6 mr-7">Privacy Policy</div>
+			</div>
+			<div class="modal-body pb-4 pt-0">
+				<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+			</div>
+			<div class="modal-footer pt-4 pb-6 px-6">
+				<button type="button" class="btn btn-outline-primary d-block mx-auto" data-dismiss="modal">I accept</button>
+			</div>
+			<button type="button" class="close close-modal" data-dismiss="modal">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- The Modal no-email -->
+<div class="modal fade" id="terms-of-use">
+	<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header px-5 pt-5 pb-0">
+				<div class="h3 small pb-6 mr-7">Terms of use</div>
+			</div>
+			<div class="modal-body pb-4 pt-0">
+				<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+			</div>
+			<div class="modal-footer pt-4 pb-6 px-6">
+				<button type="button" class="btn btn-outline-primary d-block mx-auto" data-dismiss="modal">I accept</button>
+			</div>
+			<button type="button" class="close close-modal" data-dismiss="modal">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+	<script src="js/libs.min.js?_v=20220823062900"></script>
+	<script src="js/main.min.js?_v=20220823062900"></script>
 </body>
 
 </html>
