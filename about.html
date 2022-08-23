@@ -4,26 +4,28 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=412, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="css/libs.min.css?_v=20220823063641">
-	<link rel="stylesheet" href="css/main.min.css?_v=20220823063641">
+	<link rel="stylesheet" href="css/libs.min.css?_v=20220823131607">
+	<link rel="stylesheet" href="css/main.min.css?_v=20220823131607">
 	<title>About</title>
 </head>
 
 <body>
-	<header class="header ">
+	<header class="header">
+	<!-- header-user -->
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<nav class="navbar navbar-expand-xl navbar-light bg-white">
 					<a class="navbar-brand" href="#"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ml-auto text-center align-items-center">
+						<ul class="navbar-nav text-center align-items-center">
 							<li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">For company</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">About</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-							<li class="nav-item d-xl-none"><button type="button" class="btn btn-primary">Get started</button></li>
+							<li class="nav-item d-xl-none btn-started"><button type="button" class="btn btn-primary">Get started</button></li>
+							<li class="nav-item d-xl-none btn-my-courses"><button type="button" class="btn btn-outline-primary">My courses</button></li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">EN</a>
 								<div class="dropdown-menu mx-auto">
@@ -32,18 +34,19 @@
 									<a class="dropdown-item" href="#">Spanish</a>
 								</div>
 							</li>
-							<li class="nav-item d-xl-none exit"><button type="button" class="btn btn-outline-primary">Exit</button></li>
+							<li class="nav-item d-xl-none exit"><button type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Exit</button></li>
 						</ul>
 					</div>
-					<div class="d-flex align-items-center">
-						<div class="dropdown user-menu d-none">
+					<div class="menu-right d-flex align-items-center">
+						<button class="btn btn-outline-primary btn-my-courses mr-7">My courses</button>
+						<div class="dropdown user-menu">
 							<button class="btn btn-primary profile dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">YN</button>
 							<div class="dropdown-menu dropdown-menu-right mx-auto">
 								<a class="dropdown-item" href="#">My account</a>
 								<a class="dropdown-item" href="#">Payment history</a>
 							</div>
 						</div>
-						<div class="button d-flex align-items-center">
+						<div class="button">
 							<button type="button" class="btn sign-in">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#user"></use>
@@ -529,8 +532,8 @@
 		</div>
 	</div>
 </div>
-	<script src="js/libs.min.js?_v=20220823063641"></script>
-	<script src="js/main.min.js?_v=20220823063641"></script>
+	<script src="js/libs.min.js?_v=20220823131607"></script>
+	<script src="js/main.min.js?_v=20220823131607"></script>
 </body>
 
 </html>

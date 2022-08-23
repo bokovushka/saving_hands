@@ -265,11 +265,21 @@ p.small {
           box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
   background: #ffffff;
   position: relative;
+  overflow: visible;
 }
 
 .navbar {
   width: 100%;
   padding: 10px 0;
+}
+
+.navbar .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .button .btn-primary {
@@ -324,6 +334,7 @@ p.small {
 
 .navbar-nav {
   margin-right: 52px;
+  margin-left: auto;
 }
 
 .navbar-nav .nav-item {
@@ -473,6 +484,24 @@ p.small {
   -webkit-transform: translate(-50%, 0%) rotate(-45deg);
       -ms-transform: translate(-50%, 0%) rotate(-45deg);
           transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.btn-my-courses,
+.user-menu {
+  display: none;
+}
+
+.header-user .button {
+  display: none;
+}
+
+.header-user .btn-my-courses,
+.header-user .user-menu {
+  display: block;
+}
+
+.header-user .navbar-nav {
+  margin: 0 auto;
 }
 
 .footer {
@@ -2504,7 +2533,7 @@ p.small {
   min-width: max-content;
 }
 
-.empty-course .subtitle {
+.emty-course .subtitle {
   color: #858fa1;
 }
 
@@ -2930,6 +2959,14 @@ p.small {
           transform: translateX(-50%) rotate(180deg);
 }
 
+.lock {
+  overflow: hidden;
+}
+
+.lock .header {
+  overflow: auto;
+}
+
 @media (min-width: 768px) {
   .blog-p .breadcrumb-main {
     background: #f6f9fe;
@@ -2988,6 +3025,22 @@ p.small {
   .navbar-nav .exit {
     padding-top: 199px;
     padding-bottom: 60px;
+  }
+
+  .navbar-nav .btn-my-courses {
+    display: none;
+  }
+
+  .header-user .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .header-user .navbar-nav .btn-started {
+    display: none;
+  }
+
+  .header-user .navbar-nav .btn-my-courses {
+    display: block;
   }
 
   .section-top {
@@ -3653,6 +3706,10 @@ p.small {
     -webkit-transform: translateX(-50%) translateX(-8.5px) rotate(180deg);
         -ms-transform: translateX(-50%) translateX(-8.5px) rotate(180deg);
             transform: translateX(-50%) translateX(-8.5px) rotate(180deg);
+  }
+
+  .header-user .menu-right .btn-my-courses {
+    display: none;
   }
 }
 
