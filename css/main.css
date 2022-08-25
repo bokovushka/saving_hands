@@ -1811,12 +1811,12 @@ p.small {
 
 .module .svg-folder::before {
   background: url(../img/icons/icons.svg#folder) 50% 50% no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .module .svg-test::before {
   background: url(../img/icons/icons.svg#test) 50% 50% no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .module .part-status {
@@ -1862,7 +1862,7 @@ p.small {
   width: 12px;
   height: 12px;
   background: url(../img/icons/icons.svg#check) 50% 50% no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .module .time {
@@ -2053,7 +2053,7 @@ p.small {
   position: absolute;
   width: 9px;
   height: 9px;
-  left: -37.5px;
+  left: -37px;
   -webkit-transform: translateY(-50%) translateY(-0.5px);
       -ms-transform: translateY(-50%) translateY(-0.5px);
           transform: translateY(-50%) translateY(-0.5px);
@@ -2074,10 +2074,6 @@ p.small {
 
 .module .lesson-number {
   color: #77869a;
-}
-
-#circle-option {
-  fill: red;
 }
 
 .need-help .descr {
@@ -2325,9 +2321,9 @@ p.small {
 }
 
 .lesson-body .text-mask {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, rgba(0, 0, 0, 0)), color-stop(60%, #3b424e));
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 5%, #3b424e 60%);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 5%, #3b424e 60%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, rgba(0, 0, 0, 0)), color-stop(65%, #3b424e));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 5%, #3b424e 65%);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 5%, #3b424e 65%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -2965,6 +2961,13 @@ p.small {
 
 .lock .header {
   overflow: auto;
+}
+
+.more-wrap.active .text-mask {
+  background-image: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -3615,12 +3618,6 @@ p.small {
   .lesson-body .heading .btn-outline-primary,
   .need-help .btn-outline-primary {
     width: 100%;
-  }
-
-  .lesson-body .text-mask {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, rgba(0, 0, 0, 0)), color-stop(25%, #3b424e));
-    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 5%, #3b424e 25%);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 5%, #3b424e 25%);
   }
 
   .complete-test__question .complete-test__question-number {
