@@ -431,3 +431,13 @@ $(document).ready(function () {
 		body_lock.classList.remove('lock');
 	})
 });
+
+//read more
+$('.btn-more').click(function () {
+	$(this).parent().toggleClass('active');
+	if (($(this).text()) == "more") {
+		$(this).text("less");
+	} else {
+		$(this).text("more");
+	}
+});
